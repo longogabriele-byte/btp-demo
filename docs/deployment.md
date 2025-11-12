@@ -32,9 +32,9 @@ Now open in your browser:
 }
 ```
 Deploy to SAP BTP Cloud Foundry
-
 This section assumes you have access to a BTP Trial account
 and the Cloud Foundry CLI (cf) installed.
+
 
 1.Log in to your Cloud Foundry org
 
