@@ -5,29 +5,32 @@
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-brightgreen?logo=node.js)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
 
-A simple, **Cloud-ready demo** built with the **SAP Cloud Application Programming Model (CAP)**.  
-It provides a small Orders service (`OrdersService`) exposed via **OData V4** and includes a minimal **HTML frontend**.  
-Designed for local development with **SQLite**, easily deployable to **SAP BTP Cloud Foundry**.
+A simple, **cloud-ready full-stack demo** built with the **SAP Cloud Application Programming Model (CAP)**.  
+It exposes an **OrdersService** via **OData V4**, uses **SQLite** for local development, and can be deployed to **SAP BTP Cloud Foundry**.
+
 
 ---
 
 
 
 ## Overview
-- OData V4 exposure via `OrdersService`  
-- Local testing with SQLite  
+- OData V4 exposure via `OrdersService`
+- Local testing with SQLite
 - Deployment to SAP BTP Trial using Cloud Foundry
 
-
+---
 
 ## Project Structure
+See detailed explanation here → [Project Structure](./docs/project-structure.md)
 ```
 btp-demo/
-├── db/ # Domain model (Order entity + sample data)
-├── srv/ # Service definitions
-├── app/ # HTML frontend (Orders table)
-├── manifest.yml # Cloud deployment config
-└── README.md
+├── app/          # HTML frontend
+├── db/           # Data model + sample data
+├── srv/          # CAP service definitions
+├── docs/         # Architecture, deployment, structure docs
+├── manifest.yml  # Cloud Foundry deployment descriptor
+├── package.json  # Dependencies and CAP config
+└── README.md     # Project overview
 ```
 
 
@@ -40,9 +43,9 @@ cds watch
 
  
 Then open: 
-[Open local CAP service](http://localhost:4004/odata/v4/orders/Orders)
+-[Local Service (localhost)](http://localhost:4004/odata/v4/orders/Orders)
 
-You will see JSON data like:
+Example output (JSON):
 
 ```
 {
@@ -57,19 +60,20 @@ You will see JSON data like:
 
 ## Deployment (SAP BTP)
 After deployment, your service will be available under:  
-[Open on SAP BTP](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
-
+[Cloud Service (SAP BTP Cloud Foundry)](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
+See detailed steps in [Deployment Guide](./docs/deployment-guide.md)
 
 ## Documentation
-- [Architecture Overview](./docs/architecture.md)
-- [Deployment Guide](./docs/deployment.md)
-
+- [Architecture Overview](./docs/architecture-overview.md)
+- [Deployment Guide](./docs/deployment-guide.md)
+- [Project Structure](./docs/project-structure.md)
 
 ## Tech Stack
 - SAP CAP (Cloud Application Programming Model)
 - Node.js
-- SQLite / HANA (HDI-shared)
+- SQLite / SAP HANA (HDI-shared)
 - SAP BTP Cloud Foundry
+
 
 
 
