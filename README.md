@@ -62,7 +62,7 @@ Example output (JSON):
 
 See detailed steps in: [Deployment Guide](./docs/deployment-guide.md)
 
-After deployment, your service will be available under:[Cloud Service](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
+After deployment, your service will be available under: [Cloud Service](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
 
 ## Documentation
 - [Architecture Overview](./docs/architecture-overview.md)
