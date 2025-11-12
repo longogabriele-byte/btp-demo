@@ -27,8 +27,8 @@ btp-demo/
 ```
 bash
 npm install
-cds watch
-```
+cds watch```
+
 
 Then open: 
 [http://localhost:4004/odata/v4/orders/Orders]
@@ -62,6 +62,7 @@ After deployment, your service will be available under:
 - Node.js
 - SQLite / HANA (HDI-shared)
 - SAP BTP Cloud Foundry
+
 
 
 
