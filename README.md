@@ -30,8 +30,9 @@ npm install
 cds watch
 ```
 
+ 
 Then open: 
-[https://localhost:4004/odata/v4/orders/Orders]
+[Open local CAP service](http://localhost:4004/odata/v4/orders/Orders)
 
 You will see JSON data like:
 
@@ -48,8 +49,7 @@ You will see JSON data like:
 
 ## Deployment (SAP BTP)
 After deployment, your service will be available under:  
-[https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders]
-
+[Open on SAP BTP](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
 
 
 ## Documentation
