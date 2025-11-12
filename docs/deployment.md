@@ -10,8 +10,8 @@ both locally and in the **SAP BTP Cloud Foundry** environment.
 
 Run the project on your machine with **SQLite** and **CAP’s local runtime**.
 
-### 1️. Install dependencies
-```bash
+## 1.Install dependencies
+bash
 npm install
 
 cds watch
@@ -31,7 +31,10 @@ Now open in your browser:
   ]
 }
 ```
+---
+
 Deploy to SAP BTP Cloud Foundry
+
 This section assumes you have access to a BTP Trial account
 and the Cloud Foundry CLI (cf) installed.
 
@@ -79,6 +82,7 @@ https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders
 ```
 If you open that URL, you should see the same JSON output as locally.
 
+---
 
 Summary
 ```
