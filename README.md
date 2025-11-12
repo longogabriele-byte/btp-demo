@@ -1,25 +1,53 @@
-# Getting Started
+SAP CAP Orders Demo
 
-Welcome to your new project.
+This repository contains a simple SAP CAP (Cloud Application Programming Model) demo project.  
+It demonstrates how to define a service, expose data through OData V4, and deploy to the SAP BTP Cloud Foundry environment.
 
-It contains these folders and files, following our recommended project layout:
-
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+Overview
+- A minimal CAP service with an `Orders` entity  
+- OData V4 exposure via `OrdersService`  
+- Local testing with SQLite  
+- Deployment to SAP BTP Trial using Cloud Foundry
 
 
-## Next Steps
+Project Structure
+btp-demo/
+├── db/                 # Domain model (Order entity + sample data)
+├── srv/                # Service definitions
+├── docs/               # Architecture and Deployment guides
+├── manifest.yml        # Cloud deployment config
+└── README.md
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+Run Locally
+npm install
+cds watch
 
+Then open: http://localhost:4004/odata/v4/orders/Orders
 
-## Learn More
+You will see JSON data like:
 
-Learn more at https://cap.cloud.sap/docs/get-started/.
+{
+  "@odata.context": "$metadata#Orders",
+  "value": [
+    { "ID": 1, "Name": "Laptop Order" },
+    { "ID": 2, "Name": "Cloud Subscription" },
+    { "ID": 3, "Name": "Training License" }
+  ]
+}
+
+Deployment (SAP BTP)
+After deployment, your service will be available under:  
+https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders
+
+Documentation
+- Architecture Overview  
+- Deployment Guide
+
+Tech Stack
+- SAP CAP (Cloud Application Programming Model)
+- Node.js
+- SQLite / HANA (HDI-shared)
+- SAP BTP Cloud Foundry
+
+Created by Gabriele Luca Longo  
+
