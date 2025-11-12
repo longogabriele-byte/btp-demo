@@ -1,17 +1,27 @@
 {
   "name": "btp-demo",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
+  "description": "A simple SAP CAP demo project.",
   "dependencies": {
+    "@cap-js/sqlite": "^2.0.4",
     "@sap/cds": "^9",
-    "express": "^4"
+    "morgan": "^1.10.1"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2",
     "@sap/cds-dk": "^9.4.3"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds run --in-memory"
   },
-  "private": true
+  "cds": {
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": [
+          "db",
+          "srv"
+        ]
+      }
+    }
+  }
 }

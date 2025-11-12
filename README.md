@@ -1,7 +1,15 @@
 # SAP CAP Orders Demo
 
-This repository contains a simple SAP CAP (Cloud Application Programming Model) demo project.  
-It demonstrates how to define a service, expose data through OData V4, and deploy to the SAP BTP Cloud Foundry environment.
+
+[![Built with: SAP CAP](https://img.shields.io/badge/Built%20with-SAP%20CAP-blue?logo=sap)](https://cap.cloud.sap)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-brightgreen?logo=node.js)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)]()
+
+A simple, **Cloud-ready demo** built with the **SAP Cloud Application Programming Model (CAP)**.  
+It provides a small Orders service (`OrdersService`) exposed via **OData V4** and includes a minimal **HTML frontend**.  
+Designed for local development with **SQLite**, easily deployable to **SAP BTP Cloud Foundry**.
+
+---
 
 
 
@@ -17,7 +25,7 @@ It demonstrates how to define a service, expose data through OData V4, and deplo
 btp-demo/
 ├── db/ # Domain model (Order entity + sample data)
 ├── srv/ # Service definitions
-├── docs/ # Architecture and Deployment guides
+├── app/ # HTML frontend (Orders table)
 ├── manifest.yml # Cloud deployment config
 └── README.md
 ```

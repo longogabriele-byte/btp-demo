@@ -1,5 +1,5 @@
-using demo from '../db/schema';
+using { demo as db } from '../db/schema';
 
 service OrdersService {
-  entity Orders as projection on demo.Orders;
+  entity Orders as projection on db.Orders;
 }

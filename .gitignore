@@ -1,34 +1,26 @@
-# CAP btp-demo
-_out
-*.db
-*.sqlite
-connection.properties
-default-*.json
-.cdsrc-private.json
-gen/
+# Node & CAP build artifacts
 node_modules/
-target/
-
-# Web IDE, App Studio
-.che/
-.gen/
-
-# MTA
-*_mta_build_tmp
-*.mtar
-mta_archives/
-
-# Other
-.DS_Store
-*.orig
+gen/
+db.sqlite
 *.log
 
-*.iml
-*.flattened-pom.xml
+# Local build or temp files
+project-structure.txt
+*.db
+*.sqlite
+target/
+*.orig
 
-# IDEs
-# .vscode
-# .idea
+# IDE / editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 
-# @cap-js/cds-typer
-@cds-models
+# MTA / CF / Studio (optional but safe)
+.che/
+mta_archives/
+*_mta_build_tmp
+
+# @cap-js/cds-typer temporary models
+@cds-models/
