@@ -22,13 +22,14 @@ btp-demo/
 └── README.md
 ```
 
-```
+
 ## Run Locally
+```
 bash
 npm install
 cds watch
-
 ```
+
 Then open: 
 [http://localhost:4004/odata/v4/orders/Orders]
 
@@ -43,20 +44,18 @@ You will see JSON data like:
     { "ID": 3, "Name": "Training License" }
   ]
 }
-
 ```
 
 ## Deployment (SAP BTP)
 After deployment, your service will be available under:  
 [https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders]
 
-```
+
 
 ## Documentation
-- Architecture Overview  
-- Deployment Guide
+- [Architecture Overview](./docs/architecture.md)
+- [Deployment Guide](./docs/deployment.md)
 
-```
 
 ## Tech Stack
 - SAP CAP (Cloud Application Programming Model)
@@ -64,7 +63,7 @@ After deployment, your service will be available under:
 - SQLite / HANA (HDI-shared)
 - SAP BTP Cloud Foundry
 
-```
+
 
 Created by Gabriele Luca Longo  
 
