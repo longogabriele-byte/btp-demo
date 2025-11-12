@@ -22,7 +22,8 @@ btp-demo/
 └── README.md
 ---
 
-```## Run Locally
+```
+## Run Locally
 bash
 npm install
 cds watch
