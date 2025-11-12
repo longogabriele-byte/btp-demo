@@ -1,4 +1,4 @@
-# SAP CAP Orders Demo
+# CAP Orders Service (SAP BTP Demo)
 
 
 [![Built with: SAP CAP](https://img.shields.io/badge/Built%20with-SAP%20CAP-blue?logo=sap)](https://cap.cloud.sap)
@@ -21,7 +21,6 @@ It exposes an **OrdersService** via **OData V4**, uses **SQLite** for local deve
 ---
 
 ## Project Structure
-See detailed explanation here → [Project Structure](./docs/project-structure.md)
 ```
 btp-demo/
 ├── app/          # HTML frontend
@@ -32,6 +31,7 @@ btp-demo/
 ├── package.json  # Dependencies and CAP config
 └── README.md     # Project overview
 ```
+See detailed explanation here → [Project Structure](./docs/project-structure.md)
 
 
 ## Run Locally
@@ -43,7 +43,7 @@ cds watch
 
  
 Then open: 
--[Local Service (localhost)](http://localhost:4004/odata/v4/orders/Orders)
+[Local Service (localhost)](http://localhost:4004/odata/v4/orders/Orders)
 
 Example output (JSON):
 
@@ -59,8 +59,12 @@ Example output (JSON):
 ```
 
 ## Deployment (SAP BTP)
-After deployment, your service will be available under:  
-[Cloud Service (SAP BTP Cloud Foundry)](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
+After deployment, your service will be available under:<br>
+Cloud Service (SAP BTP Cloud Foundry)<br><br>
+See detailed steps in<br>
+[Deployment Guide](./docs/deployment-guide.md)
+
+
 See detailed steps in [Deployment Guide](./docs/deployment-guide.md)
 
 ## Documentation
