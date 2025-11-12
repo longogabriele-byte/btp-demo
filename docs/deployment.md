@@ -36,7 +36,7 @@ Deploy to SAP BTP Cloud Foundry
 This section assumes you have access to a BTP Trial account
 and the Cloud Foundry CLI (cf) installed.
 
-1️.Log in to your Cloud Foundry org
+1.Log in to your Cloud Foundry org
 
 ```
 cf login -a https://api.cf.eu10.hana.ondemand.com
@@ -55,9 +55,7 @@ cf push
 Cloud Foundry will:
 
 create the app using the configuration in manifest.yml
-
 build the CAP runtime
-
 create (or bind) an SAP HANA service if configured
 
 manifest.yml Example
@@ -83,10 +81,11 @@ If you open that URL, you should see the same JSON output as locally.
 
 
 Summary
+```
 Step	Command	Description
 1	npm install	Install dependencies
 2	cds watch	Run locally with SQLite
 3	npx cds build --production	Build deployable version
 4	cf push	Deploy to SAP BTP Cloud Foundry
-
+```
 This setup ensures your project is cloud-ready and follows SAP’s CAP deployment best practices.
