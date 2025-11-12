@@ -22,8 +22,8 @@ btp-demo/
 └── README.md
 ---
 
-## Run Locally
-```bash
+```## Run Locally
+bash
 npm install
 cds watch
 
@@ -60,6 +60,7 @@ After deployment, your service will be available under:
 - SQLite / HANA (HDI-shared)
 - SAP BTP Cloud Foundry
 
+```
 
 Created by Gabriele Luca Longo  
 
