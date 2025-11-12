@@ -28,11 +28,11 @@ btp-demo/
 bash
 npm install
 cds watch
-
+```
 
 Then open: 
-[http://localhost:4004/odata/v4/orders/Orders]
-```
+[https://localhost:4004/odata/v4/orders/Orders]
+
 You will see JSON data like:
 
 ```
