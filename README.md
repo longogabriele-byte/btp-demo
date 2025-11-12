@@ -42,7 +42,7 @@ cds watch
 ```
 
  
-Then open: 
+Then open → 
 [Local Service (localhost)](http://localhost:4004/odata/v4/orders/Orders)
 
 Example output (JSON):
@@ -60,9 +60,9 @@ Example output (JSON):
 
 ## Deployment (SAP BTP)
 
-See detailed steps in: [Deployment Guide](./docs/deployment-guide.md)
+See detailed steps in → [Deployment Guide](./docs/deployment-guide.md)
 
-After deployment, your service will be available under: [Cloud Service](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
+After deployment, your service will be available under → [Cloud Service](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)
 
 ## Documentation
 - [Architecture Overview](./docs/architecture-overview.md)
