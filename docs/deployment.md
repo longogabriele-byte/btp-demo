@@ -12,7 +12,7 @@ Run the project on your machine with **SQLite** and **CAP’s local runtime**.
 
 ## 1.Install dependencies
 
-```bash
+bash
 npm install
 
 2. Run the service
