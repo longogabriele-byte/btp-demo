@@ -59,8 +59,8 @@ Example output (JSON):
 ```
 
 ## Deployment (SAP BTP)
-After deployment, your service will be available under:[Cloud Service (SAP BTP Cloud Foundry)](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)<br>
-See detailed steps in[Deployment Guide](./docs/deployment-guide.md)
+After deployment, your service will be available under:[Cloud Service](https://btp-demo.cfapps.eu10.hana.ondemand.com/odata/v4/orders/Orders)<br>
+See detailed steps in: [Deployment Guide](./docs/deployment-guide.md)
 
 ## Documentation
 - [Architecture Overview](./docs/architecture-overview.md)
